@@ -10,7 +10,8 @@ extension FlutterArkitView: ARCoachingOverlayViewDelegate {
     let coachingView = ARCoachingOverlayView(frame: sceneView.frame)
     
     coachingView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-    
+    coachingView.activatesAutomatically = false;
+
     removeCoachingOverlay()
     
     sceneView.addSubview(coachingView)
